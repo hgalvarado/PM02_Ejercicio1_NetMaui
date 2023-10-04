@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM02_Ejercicio1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0">
+
+            <Label
+                Text="Numero 1"
+                FontSize="18"
+                HorizontalOptions="StartAndExpand" />
+
+            <Entry Keyboard="Numeric" 
+                   x:Name="txtNum1"
+                   Placeholder="0"
+                   VerticalOptions="CenterAndExpand"/>
+
+            <Label
+                Text="Numero 2"
+                FontSize="18"
+                HorizontalOptions="StartAndExpand" />
+            
+            <Entry Keyboard="Numeric" 
+                   x:Name="txtNum2"
+                   Placeholder="0"
+                   VerticalOptions="CenterAndExpand"/>
+
+            <Button
+                x:Name="btnSuma"
+                Text="Sumar"
+                WidthRequest="300"
+                Clicked="sumar"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="btnResta"
+                Text="Restar"
+                WidthRequest="300"
+                Clicked="restar"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="btnMultiplicacion"
+                Text="Multiplicacion"
+                WidthRequest="300"
+                Clicked="multiplicacion"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="btnDividir"
+                Text="Dividir"
+                WidthRequest="300"
+                Clicked="division"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
